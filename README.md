@@ -115,6 +115,10 @@ ChatManager also has a few permissions:
   <td>Permission to use the &o color code to italicize text. Example: <code>&oEmphasised text</code></td>
 </tr>
 <tr>
+  <td>chatmanager.chat.reset</td>
+  <td>Permission to use the &r to reset the color to white. Example: <code>&rA colored white text.</code></td>
+</tr>
+<tr>
   <td>chatmanager.override.ranged</td>
   <td>Permission to override/ignore the ranged chat setting.  If this is not explicitly disabled for groups that have * permissions, all chat messages will be sent globally (but will not be coloured as such)</td>
 </tr>
