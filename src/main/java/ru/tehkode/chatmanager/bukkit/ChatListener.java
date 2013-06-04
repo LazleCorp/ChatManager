@@ -72,6 +72,7 @@ public class ChatListener implements Listener {
 	protected String permissionChatStrikethrough = "chatmanager.chat.strikethrough";
 	protected String permissionChatUnderline = "chatmanager.chat.underline";
 	protected String permissionChatItalic = "chatmanager.chat.italic";
+	protected String permissionChatReset = "chatmanager.chat.reset";
 	private MultiverseConnector multiverseConnector;
 
 	public ChatListener(FileConfiguration config) {
@@ -247,7 +248,9 @@ public class ChatListener implements Listener {
 		if (user.has(permissionChatItalic, worldName)) {
 			newstring = chatItalicPattern.matcher(newstring).replaceAll("\u00A7$1");
 		}
+		if (user.has(permissionChatReset, worldName)) {
 		newstring = chatResetPattern.matcher(newstring).replaceAll("\u00A7$1");
+		}
 		return newstring;
 	}
 
